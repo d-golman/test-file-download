@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import json from '../test';
 
-function msToTime(duration) {
+const msToTime = (duration) => {
   let milliseconds = Math.floor((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),
     minutes = Math.floor((duration / (1000 * 60)) % 60),
